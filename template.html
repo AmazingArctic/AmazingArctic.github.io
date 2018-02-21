@@ -30,26 +30,34 @@
 	//Image setup: here we set the window size and color
 	void setup() {
 		size(window.innerWidth - 40, window.innerHeight - 50); 	//Use this if you want it to be the wholes screen
-		size(500, 500);						//Use this if you want to make it a custom size 
-    	        background(151, 244, 247);				//Color the background
+		size(100, 100);						//Use this if you want to make it a custom size 
+    	        background(65, 158, 3);				//Color the background
 	}
 
 	//Declare any variables here:
-	var x = 0;
-
+	var x = 40;
+	var y = 32;
+	var z = 66;
 	//Draw function: runs many times per minute
 	void draw() {
 	    //Use variables to draw something that moves!
+	    ellispe(x, y, z)
 	}
 
 	//Key Pressed function: runs when you press something on your keyboard! 
 	void keyPressed(){
 	   if(key == CODED){
 	        if (keyCode == LEFT){
-		   //Do something
+		   x = x-1
 		}
 		else if (keyCode == RIGHT){
-		   //Do something
+		   x = x+1
+		}
+		if (keyCode == UP){
+		y = y+1
+		}
+		else if (keyCode = DOWN){
+		y = y-1
 		}
 	    }
 	}
