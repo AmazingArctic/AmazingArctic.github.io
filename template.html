@@ -29,7 +29,7 @@
 
 	//Image setup: here we set the window size and color
 	void setup() {
-		size(window.innerWidth - 40, window.innerHeight - 50); 	//Use this if you want it to be the wholes screen
+		//size(window.innerWidth - 40, window.innerHeight - 50); 	//Use this if you want it to be the wholes screen
 		size(100, 100);						//Use this if you want to make it a custom size 
     	        background(65, 158, 3);				//Color the background
 	}
@@ -54,7 +54,7 @@
 		else if (keyCode == RIGHT){
 		   x = x+1
 		}
-		if (keyCode == UP){
+		else if (keyCode == UP){
 		y = y+1
 		}
 		else if (keyCode == DOWN){
